@@ -1,0 +1,79 @@
+.docSection {
+    background-color: #f4f4f4;
+    padding: 0px;
+    
+}
+
+.docHeader {
+    background-color: #fff;
+    height: 120px;
+    padding: 0px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    
+}
+
+#measure {
+    height: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin-bottom: 15px;
+    display: grid;
+    width: 100%;
+    
+}
+
+
+
+.docArea {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 90vh;
+}
+
+.docTitle {
+    height:70%;
+   
+    display: grid;
+    grid-template-columns: 7% 1fr;
+    grid-template-rows: repeat(2,1fr);
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.docTitle img {
+    grid-row: span 2;
+    grid-template-columns: span 1;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.docTitle input {
+    background-color: transparent;
+    border: none;
+    width: 25%;
+}
+
+.docOpt {
+    height:30%;
+}
+
+#options  {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 55%;
+    list-style-type: none;
+    margin-left: -40px;
+    justify-content: left;
+}
+
+#options button  {
+    /* background-color: #fff;
+    padding: 0px;
+    border:none;
+    margin: 0px; */
+}
+
+#options button:hover {
+    cursor: pointer;
+}

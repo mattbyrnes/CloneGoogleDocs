@@ -1,3 +1,2 @@
-# CloneGoogleDocs
-
-This is the read me
+# gdoc_clone
+Clone for Google Docs

@@ -1,0 +1,356 @@
+.doc-btn {
+    position: relative;
+    float: right;
+    background: blue;
+    padding: 10px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.doc-btn:hover {
+    cursor: pointer;
+    background: green;
+}
+
+.modal-fullpage {
+    z-index: 999;
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    background: #eee;
+    overflow: scroll;
+}
+
+.title-header {
+    width: 100%;
+    font-size: 14px;
+    background: #eee;
+    display: block;
+}
+
+#input-title {
+    color: #000;
+    width: 300px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.page {
+    width: 70%;
+    background: #ddd;
+    display: block;
+    float: left;
+    box-sizing: content-box; 
+}
+
+#input-content {
+    border: 0px solid rgb(243, 227, 227);
+    width: 80%;
+    height: auto;
+    font-size: 14px;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+}
+
+#add-button {
+    display: inline-block;
+    background: none;
+    color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.open-doc-btn {
+    display: inline-block;
+    border: 1px solid #eee;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px 20px 10px 0px;
+}
+
+.open-doc-btn:hover {
+    border: 1px solid #7092F1;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.hide{
+    display: none;
+}
+
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.4em;
+    color: #777;
+    grid-column: span 1;
+    align-self: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+header {
+    height: 80px;
+    padding: 20px;
+    border-bottom: 1px solid #888;
+}
+
+#top nav {
+    display: grid;
+    grid-template-columns: 5% 25% 1fr 15%;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.fa-bars {
+    grid-column: span 1;
+}
+
+#top h1 img {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+#top input{
+    display: none;
+}
+
+.search {
+    display: grid;
+    grid-column: span 1;
+
+}
+
+#search {
+    margin-top: -15px;
+    color: #999;
+    justify-self: end;
+}
+
+/* Input when smaller */
+#selectedInput{
+    display: none;
+}
+
+#closeSearch {
+
+}
+
+#grid {
+    grid-column: span 1;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    grid-column: span 1;
+    color: #666;
+}
+
+/* New doc or Template */
+
+.new {
+    height: 300px;
+    background-color: #3C3C3C;
+    padding: 25px 70px;
+    color: rgb(212, 212, 212);
+}
+
+.new h2 {
+    margin-bottom: 25px;
+}
+
+.new h3 {
+    color: #F4F4F4;
+}
+
+.new button {
+    padding: 0px;
+    border: none;
+}
+
+.new button:hover {
+    border: 2.5px solid #7092F1;
+    cursor: pointer;
+}
+
+.newInner {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+}
+
+#newBlank {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 130px;
+    height: 165px;
+    background-color: #fff;
+}
+
+.fa-plus {
+    color: #7092F1;
+}
+
+main  {
+    background-color: #F4F4F4;
+    height: 100vh;
+    padding: 25px 70px;
+}
+
+/* Recent Docs */
+
+#stickyNav {
+    color: #3C3C3C;
+    height: 50px;
+    width: 80%;
+    grid-gap: 10px;  
+}
+
+.sort {
+    display: inline;
+}
+
+#downSort {
+    display: none;
+}
+
+#stickyNav h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    display: inline;
+    margin-right: 20px;
+}
+
+.fa-folder {
+    margin-left: 70px;
+}
+
+#gdoclist {
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px; */
+}
+
+.docPrev {
+    width: 200px;
+    height: 260px;
+    background-color: #fff;
+    color: #3C3C3C;
+    overflow: hidden;
+    font-size: 6px;
+}
+
+.docPrev:hover {
+    cursor: pointer;
+}
+
+.docPrev h2 {
+    grid-row: span 1;
+}
+
+h4 {
+    font-size: 14px;
+    color: #999;
+}
+.captionLabel {
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 15px;
+    margin-top: -100px;
+}
+
+.labelGroup {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+}
+#prevbox {
+    display: grid;
+    grid-row:span 1;
+    height: 100%;
+}
+
+.fa-sticky-note {
+   color:  #7092F1
+}
+.fa-ellipsis-v {
+   color:  #999;
+}
+
+@media only screen and (min-width:788px) {
+    #top h1 img{
+        display: inline;
+    }
+
+    #top input{
+        display: inline;
+        border: none;
+        border-radius: 5px;
+        background-color: #F4F4F4 ;
+    
+    }
+    
+    #top nav {
+        display: grid;
+        grid-template-columns: 5% 15% 1fr 10%;
+        align-items: center;
+        grid-gap:5px;
+    }
+
+    .search-main {
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        padding: 20px;
+        padding-left: 70px;
+        background-color: rgb(248, 248, 248);
+        font-size: 1em;
+    }
+
+    .search {
+        align-self: start;
+        grid-column: span 1;
+        position: relative;
+        display: grid;
+        width: 100%;
+    }
+    #search {
+        margin-top: 18px;
+        color: #999;
+        position: absolute;
+        left: 30px;
+    }
+
+    .sort {
+        position: relative;
+    }
+
+    #downSort {
+        display: inline;
+        justify-self: start;
+        align-self: start;
+        position: absolute;
+    }
+
+    #existingDocs {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 80%;
+    }
+    
+}
+
