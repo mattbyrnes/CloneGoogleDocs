@@ -1,3 +1,8 @@
+.fas {
+    color: #6e6e6e;
+}
+
+
 .doc-btn {
     position: relative;
     float: right;
@@ -11,6 +16,7 @@
     cursor: pointer;
     background: green;
 }
+
 
 .modal-fullpage {
     z-index: 999;
@@ -73,8 +79,12 @@
 }
 
 .open-doc-btn:hover {
-    border: 1px solid #7092F1;
+  
     text-decoration: none;
+    border: 1px solid #000;
+    cursor: pointer;
+
+
 }
 
 body {
@@ -106,8 +116,8 @@ h3 {
 }
 
 header {
-    height: 80px;
-    padding: 20px;
+    height: 70px;
+    padding: 10px;
     border-bottom: 1px solid #888;
 }
 
@@ -155,10 +165,7 @@ header {
 
 #grid {
     grid-column: span 1;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    grid-column: span 1;
-    color: #666;
+    float: right;
 }
 
 /* New doc or Template */
@@ -194,6 +201,18 @@ header {
     align-items: center;
 }
 
+
+
+#newInner a {
+    text-decoration: none;
+    color: #fff;
+}
+#newInner a:active {
+    text-decoration: none;
+}
+
+
+
 #newBlank {
     display: grid;
     align-content: center;
@@ -209,10 +228,23 @@ header {
 
 main  {
     background-color: #F4F4F4;
-    height: 100vh;
+    height: 100%;
     padding: 25px 70px;
 }
 
+#gdoclist {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+    height: 100%;
+    width: 75%;
+    margin:auto;
+  
+}
+
+.fa-times {
+    color: #777;
+}
 /* Recent Docs */
 
 #stickyNav {
@@ -241,19 +273,29 @@ main  {
     margin-left: 70px;
 }
 
-#gdoclist {
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 25px; */
+
+.open-doc-btn {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 0px;
+    background-color: #fff;
+   
+}
+
+.open-doc-btn:hover {
+    border: 1px solid #7092F1;
+}
+
+.open-doc-btn h2 {
+    color: #777;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .docPrev {
-    width: 200px;
-    height: 260px;
-    background-color: #fff;
+    width: auto;
+    height: 280px;
     color: #3C3C3C;
     overflow: hidden;
-    font-size: 6px;
 }
 
 .docPrev:hover {
@@ -264,6 +306,16 @@ main  {
     grid-row: span 1;
 }
 
+.scale-down {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
 h4 {
     font-size: 14px;
     color: #999;
@@ -272,6 +324,9 @@ h4 {
     border-top: 1px solid rgb(221, 221, 221);
     padding: 15px;
     margin-top: -100px;
+    background: #fff;
+    z-index: 100;
+    position: relative;
 }
 
 .labelGroup {
@@ -291,6 +346,12 @@ h4 {
    color:  #999;
 }
 
+.fa-times {
+
+}
+.new, main {
+    overflow: hidden;
+}
 @media only screen and (min-width:788px) {
     #top h1 img{
         display: inline;
@@ -309,6 +370,7 @@ h4 {
         grid-template-columns: 5% 15% 1fr 10%;
         align-items: center;
         grid-gap:5px;
+        margin: 0px 10px;
     }
 
     .search-main {
@@ -351,6 +413,14 @@ h4 {
         grid-template-columns: repeat(4,1fr);
         width: 80%;
     }
-    
-}
 
+    /* #gdoclist {
+        
+        grid-template-columns: repeat(3,1fr);
+       
+    } */
+    
+
+
+
+}

@@ -5,16 +5,18 @@ const loadDocs = function () {
                 `
                 <a class="open-doc-btn" id='${element._id}' href="/doc/${element._id}">
                     <div class="docPrev">
-                        ${element.docContent}
+                        <div class="scale-down">
+                            ${element.docContent}
+                        </div>
                     </div>    
                     <div class="captionLabel">
-                        <h2>${element.docTitle}</h2>
+                        <h2>${element.docTitle}</h2>  
                         <div class="labelGroup">
                             <i class="fas fa-sticky-note"></i>
                             <h4> Open October 4, 2018</h4>
-                            <i class="fas fa-ellipsis-v"></i>
+                            <i class="fas fa-times " id='${element._id}'></i>
                         </div>
-                        <i class="fas fa-times" id='${element._id}'></i>
+                       
                     </div> 
                 </a>
                 `

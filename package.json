@@ -12,6 +12,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "mandeep kaur",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DishantaK/gdoc_clone.git"
+  },
+  "author": "Dishanta K , Matt B , Christian G, Marcus R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DishantaK/gdoc_clone/issues"
+  },
+  "homepage": "https://github.com/DishantaK/gdoc_clone#readme"
 }
